@@ -4,7 +4,6 @@ from datetime import datetime
 
 first_frame = None
 motion_list = [ None, None ]
-# Time of movement
 time = []
 
 # Capturing video
