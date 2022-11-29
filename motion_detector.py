@@ -1,10 +1,7 @@
 import cv2, time
 from datetime import datetime
 
-
 first_frame = None
-motion_list = [ None, None ]
-
 # Capturing video
 video = cv2.VideoCapture("check.mp4")
 
