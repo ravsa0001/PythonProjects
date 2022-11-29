@@ -19,7 +19,7 @@ while True:
     # Difference between first_frame and current_frame
     diff_frame = cv2.absdiff(first_frame, gray)
 
-    # If change is greater than 30 it will show white color(255)
+    # If change is greater than 50 it will show white color(255)
     thresh_frame = cv2.threshold(diff_frame, 50, 255, cv2.THRESH_BINARY)[1]
     thresh_frame = cv2.dilate(thresh_frame, None, iterations = 2)
 
