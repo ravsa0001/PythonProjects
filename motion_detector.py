@@ -40,20 +40,20 @@ while True:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)
 
     # Displaying image in gray_scale
-    cv2.imshow("Gray Frame", gray)
+    # cv2.imshow("Gray Frame", gray)
+    
     # Displaying the difference in the current_frame to first_frame
-    cv2.imshow("Difference Frame", diff_frame)
+    # cv2.imshow("Difference Frame", diff_frame)
+    
     # Displaying black and white frame 
-    cv2.imshow("Threshold Frame", thresh_frame)
+    # cv2.imshow("Threshold Frame", thresh_frame)
+    
     # Displaying color frame 
     cv2.imshow("Color Frame", frame)
 
     key = cv2.waitKey(1)
     if key == ord('q'):
-        if motion == 1:
-            time.append(datetime.now())
         break
 
 video.release()
-
 cv2.destroyAllWindows()
